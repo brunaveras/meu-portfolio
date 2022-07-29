@@ -4,15 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruna Veras - Portfólio</title>
+    <title>Bruna Veras</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
+
 <body>
+
     <header>
+
+        <div class="logo"></div>
+
         <nav>
-            <ul>
-                <li></li>
+            <ul class="nav_links">
+                <li><a href="#">sobre mim</a></li>
+                <li><a href="#">portfólio</a></li>
+                <li><a href="#">blog</a></li>
             </ul>
         </nav>
+
+        <a class="cta" href="#"><button>contato</button></a>
+
     </header>
+
+
+    <div class="hero">
+
+        <div class="hero-text">
+            <h1>Bruna Veras</h1>
+            <h2>Desenvolvedora Web</h2>
+        </div>
+
+        <div class="hero-image">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="formulario">
+
+        <form action="recebedor.php" method="post">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+            <label for="email">Seu melhor e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+    <footer>
+
+        <div class="social">
+            <a href="#"><img src="/svg/instagram-brands.svg"</a>
+            <a href="#"><img src="/svg/github-brands.svg"</a>
+            <a href="#"><img src="/svg/linkedin-brands.svg"</a>
+        </div>
+
+        <ul class="list-footer">
+            <li><a href="#">sobre mim</a></li>
+            <li><a href="#">portfólio</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+
+
+        <p>&copy; 2022 - Bruna Veras</p>
+    </footer>
 </body>
 </html>
