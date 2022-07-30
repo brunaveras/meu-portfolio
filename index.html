@@ -11,12 +11,16 @@
 
 <body>
 
-    <header>
+    <!-- BARRA DE NAVEGAÇÃO-->
+    <header class="row container">
+        <a href="#" class="logo">
+            <img src="/img/logo.png" alt="Logo da empresa">
+        </a>
 
-        <div class="logo"></div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
 
-        <nav>
-            <ul class="nav_links">
+        <nav class="navigation row">
+            <ul class="row">
                 <li><a href="#">sobre mim</a></li>
                 <li><a href="#">portfólio</a></li>
                 <li><a href="#">blog</a></li>
@@ -26,47 +30,49 @@
         <a class="cta" href="#"><button>contato</button></a>
 
     </header>
+    <!-- FIM DA BARRA DE NAVEGAÇÃO-->
 
-
-    <div class="hero">
-
-        <div class="hero-text">
-            <h1>Bruna Veras</h1>
-            <h2>Desenvolvedora Web</h2>
+    <!--HERO-->
+    <section class="hero">
+        <div>
+            <h1>Olá.</h1>
+            <p>Sou <span>Bruna Veras</span> e estou aqui para te ajudar a encontrar o seu projeto.</p>
         </div>
+        <div class="hero-img">
+            <img src="/img/hero.png" alt="Hero">
+        </div>
+    </section>
+    <!-- FIM DO HERO-->
 
-        <div class="hero-image">
 
+
+
+
+
+<section class="containerForm">
+    <div class="contactArea">
+
+        <div class="leftContact"></div>
+        <div class="rightContact">
+
+            <h2>Entre em contato</h2>
+
+            <form action="recebedor.php" method="post">
+
+                <input class="field" type="text" name="nome" id="nome" placeholder="Seu nome">
+
+                <input class="field" type="email" name="email" id="email" placeholder="Digite seu email">
+
+                <input class="field" type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+
+                <textarea class="field area" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
-    <div class="formulario">
-
-        <form action="recebedor.php" method="post">
-
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-
-            <label for="email">Seu melhor e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email">
-
-            <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-
-            <input type="submit" value="Enviar">
-
-        </form>
-    </div>
+</section>
 
     <footer>
 
@@ -85,5 +91,8 @@
 
         <p>&copy; 2022 - Bruna Veras</p>
     </footer>
+
+
+<script src="/js/script.js"></script>
 </body>
 </html>
